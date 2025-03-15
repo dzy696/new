@@ -2,41 +2,26 @@
  +----------------------------------------------------------------------
  | 网站定制开发 微信：woniu_2025 [ WE ARE THE BEST. 2021-06-26 ]
  +----------------------------------------------------------------------
- | Copyright (c) 2021 https://snailweb.cn All Rights Reserved.
+ | Copyright (c) 2021 https://xyba.cn All Rights Reserved.
  +----------------------------------------------------------------------
- | Licensed ( https://snailweb.cn )
+ | Licensed ( https://xyba.cn )
  +----------------------------------------------------------------------
  | Author: snail <137224272@qq.com>
  +----------------------------------------------------------------------
  ***/
-console.log("\n %c 网站定制开发加微信：woniu_2025 %c https://snailweb.cn \n", "color: #ffffff; background: #f1404b; padding:5px 0;", "background: #030307; padding:5px 0;");
+console.log("\n %c 网站定制开发加微信：woniu_2025 %c https://xyba.cn \n", "color: #ffffff; background: #f1404b; padding:5px 0;", "background: #030307; padding:5px 0;");
 
 var imgArr = [
-    './/img/01.jpg',
-    './/img/02.jpg',
-    './/img/03.jpg',
-    './/img/04.jpg',
-    './/img/05.jpg',
-    './/img/06.jpg',
-    './/img/07.jpg',
-    './/img/08.jpg',
-    './/img/09.jpg',
-    './/img/10.jpg',
-    './/img/11.jpg',
-    './/img/12.jpg',
-    './/img/13.jpg',
-    './/img/14.jpg',
-    './/img/15.jpg',
-    './/img/16.jpg',
-    './/img/17.jpg',
-    './/img/18.jpg',
-    './/img/19.jpg',
-    './/img/20.jpg',
-    './/img/21.jpg',
-    './/img/22.jpg',
-
-    './/img/01.png',
-    './/img/02.png'
+    'https://lmys.cn-bj.ufileos.com/bsn/01.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/02.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/03.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/04.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/05.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/06.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/07.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/08.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/09.jpg',
+    'https://lmys.cn-bj.ufileos.com/bsn/10.jpg',
 ]
 bgImg = imgArr[Math.floor(Math.random() * imgArr.length)];
 $('.img-bg').css('background-image', 'url(' + bgImg + ')');
