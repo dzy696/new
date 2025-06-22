@@ -1,0 +1,369 @@
+/* style.css */
+
+body {
+    font-family: -apple-system, BlinkMacMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 15px;
+    padding-top: calc(15px + 60px);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.header-content-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.header .logo {
+    width: 28px;
+    height: 28px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header .site-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 4px;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Font Awesome Icons within nav links */
+.header .nav-links a i {
+    font-size: 18px; /* Adjust icon size */
+    margin-right: 6px; /* Space between icon and text */
+}
+
+
+.header .nav-links a:hover {
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search bar styles */
+.search-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* 搜索容器宽度保持不变 */
+}
+
+.search-input-wrapper {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 8px 20px; /* 减小上下内边距来减小高度 */
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #e74c3c; /* 更改为与 Logo 相同的颜色 */
+    color: white;
+    border: none;
+    padding: 8px 20px; /* 减小上下内边距来减小高度 */
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #c0392b; /* 调整鼠标悬停时的颜色，使其与新背景色更搭 */
+}
+
+.search-options {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.search-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #555;
+}
+
+.search-options input[type="radio"] {
+    margin-right: 6px;
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 70px;
+}
+
+.grid-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    background-color: var(--hover-bg);
+}
+
+.grid-item .icon-box {
+    width: 55px;
+    height: 55px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+.grid-item .icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.footer {
+    color: #999;
+    font-size: 13px;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        padding-top: calc(10px + 60px);
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .header-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        margin: 0;
+    }
+
+    .header .left-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header .logo-container {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .header .site-title {
+        margin-left: 5px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .header .logo {
+        margin-right: 5px;
+    }
+
+    /* 隐藏移动端导航链接 */
+    .header .nav-links {
+        display: none; /* 这会完全隐藏三个链接 */
+    }
+
+    .main-content {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 16px);
+        box-sizing: border-box;
+        max-width: 800px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        justify-items: center;
+    }
+    .grid-item {
+        font-size: 13px;
+        padding: 8px;
+        min-width: unset;
+    }
+    .grid-item .icon-box {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 6px;
+    }
+    .grid-item .icon-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .footer {
+        padding: 10px 0;
+        font-size: 11px;
+    }
+
+    /* Responsive styles for search bar */
+    .search-input-wrapper {
+        border-radius: 6px;
+    }
+
+    .search-button {
+        padding: 10px 15px;
+        border-radius: 0 6px 6px 0;
+    }
+
+    .search-input {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .search-options {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-options label {
+        font-size: 14px;
+    }
+}
+
+.grid-item:hover {
+    --hover-bg: var(--random-color);
+}
+
+/* Page specific content styles (for test_link_one, two, three) */
+.page-content {
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-content h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .page-content h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
